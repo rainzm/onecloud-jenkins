@@ -1,0 +1,24 @@
+virtualMachines:
+  slaveNodeCount: 2
+  project: system
+  hypervisor: kvm
+  network: ""
+  masterNode:
+    vcpuCount: 2
+    vmemSizeGB: 4
+    image: CentOS-7.6.1810-20190430.qcow2
+    diskSizeGB: 30
+    eip: ""
+    newEipBw: ""
+    newEipChargeType: ""
+  slaveNode:
+    vcpuCount: 2
+    vmemSizeGB: 4
+    image: CentOS-7.6.1810-20190430.qcow2
+    diskSizeGB: 30
+ansiblePlaybook:
+  jenkinsHostname: locahost
+  jenkinsHttpPort: 8080
+  jenkinsAdminUsername: admin
+  jenkinsAdminPassword: admin
+
